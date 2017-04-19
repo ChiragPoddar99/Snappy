@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>snappy</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="profile.js"></script>
+  https://plus.google.com/s2/photos/profile/<user_id>?sz=100px
+    https://plus.google.com/s2/photos/profile/116018066779980863044?sz=100
+
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel ="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="member-area">
+
+    <div class="user-info"><div id="gamediv" style=" float: left;">
+          <!--<img href="javascript:insert()" class="img-round"/>-->
+        </div>
+      <!--<div class="photo">
+        <img class="ph" src="images.jpg"  height="5px" width="5px";/>
+        <img src="https://plus.google.com/s2/photos/profile/116018066779980863044?sz=100" width="100" height="100">
+
+      </div>-->
+      <span id="username"></span>
+      <span class="logout" onclick="logout()">Log Out</span>
+    </div>
+    <div class="members" id="members">
+
+    </div>
+
+    </div>
+
+  <div class="message-area">
+
+      <div class="messages" id = "messages">
+
+
+    </div>
+    <div class="chat-form">
+      <input type="hidden" id="chat-id"/>
+      <input type="text" class="chat-message" id="message-text" placeholder="write your message here and press enter....">
+      <button id="send-button" type="reset" class="btn-send">send</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDNA50SoCtgMWHDzK2EkdIsABaproPFL2U",
+      authDomain: "snappychat-5bd3e.firebaseapp.com",
+      databaseURL: "https://snappychat-5bd3e.firebaseio.com",
+      storageBucket: "snappychat-5bd3e.appspot.com",
+      messagingSenderId: "184272493946"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
+  <script type="text/javascript" src="function.js"> </script>
+  <script type="text/javascript" src="app.js">  </script>
+  <script type="text/javascript" src="chat.js">  </script>
+
+</body>
+</html>

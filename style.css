@@ -1,0 +1,220 @@
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family:"Roboto";
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body.homepage {
+  background-image: url("real.jpg");
+  background-size: cover;
+  background;no-repeat;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  border: solid 1px red;
+  border-radius: 3px;
+  box-shadow: inherit 0 3px 3px green;
+  cursor: pointer;
+
+  box-shadow: 3px 3px 3px blue;
+  blur-radius: 10px;
+}
+
+.button:hover {
+  background: white;
+  color: blueviolet;
+  box-shadow: 5px 5px 5px red;
+}
+
+.main {
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  text-shadow: 1px 1px yellow;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: white;
+}
+/*
+CSS for chat page
+*/
+.member-area {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: green;
+  width: 30%;
+  color: white;
+  overflow: auto;
+  border:solid 2px black;
+  box-shadow: 5px 5px 5px red;
+}
+
+.user-info {
+  background: blue;
+  height:65px;
+  padding: 10px;
+  border: solid 1px blue;
+  padding-right:15px;
+  pdding-top:15px;
+}
+
+.logout {
+  float: right;
+  border-radius: 5px;
+  height:20px;
+  padding-bottom:5px;
+  border:solid 1px black;
+  box-shadow:2px 2px 2px grey;
+  padding-bottom:5px;
+}
+
+.logout:hover {
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+}
+
+.member.active {
+  font-weight: bold;
+  background-color: red;
+  color: yellow;
+  height:45px;
+}
+
+.dot {
+  border: solid 5px blue;
+  border-radius: 50%;
+  float: right;
+  margin-top: 3px;
+}
+
+.member {
+  padding: 10px;
+  border-bottom: solid 1px white;
+  height:45px;
+  box-shadow: 1px 1px 1px blue;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.member:hover {
+  cursor: pointer;
+  color: green;
+  background: white;
+  box-shadow: 1px 1px 1px blue;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  boredr-top-right-radius:10px;
+}
+
+.message-area {
+  background-color: :azure;
+  position: fixed;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+}
+
+.chat-info {
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
+
+.messages {
+  background: lightblue;
+  height: 90%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.message {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: black;
+  width: 70%;
+  float: left;
+}
+
+.message.by-user {
+  background: grey;
+  float: right;
+  width: 70%;
+}
+
+
+.chat-form {
+  position: fixed;
+  left: 30%;
+  bottom: 0;
+  width: 70%;
+  background: white;
+  padding: 20px;
+  background-color: orange;
+  overflow:auto;
+}
+
+
+.chat-message {
+  padding: 10px;
+  border: solid 1px lightgrey;
+  border-radius: 4px;
+  display: block;
+  float:left;
+  width: 100%;
+
+}
+
+
+.ph{
+  float:left;
+  height:30px;
+  width:30px;
+  border:solid 1px red;
+  border-radius:50%;
+  margin-right:5px;
+}
+.ph:hover{
+  cursor:pointer;
+  height:200px;
+  width:200px;
+}
+
+
+.btn-send{
+  color:red;
+  border-radius:10px;
+  margin-top:3px;
+  width:100px;
+}
+
+#gamediv:hover{
+  width:15px;
+  height:15px;
+  cursor:pointer;
+}

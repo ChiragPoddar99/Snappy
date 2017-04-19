@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>snappy</title>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel ="stylesheet" href="style.css" />
+</head>
+<body class="homepage">
+<div class="main">
+  <h1 class="logo">
+    Snappy
+  </h1>
+  <p class="tagline">
+    An instant chat plateform
+  </p>
+  <button id="signin-button">
+    Sign in with google
+  </button>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDNA50SoCtgMWHDzK2EkdIsABaproPFL2U",
+    authDomain: "snappychat-5bd3e.firebaseapp.com",
+    databaseURL: "https://snappychat-5bd3e.firebaseio.com",
+    storageBucket: "snappychat-5bd3e.appspot.com",
+    messagingSenderId: "184272493946"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script type="text/javascript" src="function.js"> </script>
+<script type="text/javascript" src="app.js">  </script>
+
+
+</body>
+</html>
